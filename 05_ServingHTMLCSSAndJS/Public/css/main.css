@@ -1,0 +1,30 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.main-header{
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgb(193, 97, 97);
+    padding: 5px 5px;
+}
+.main-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-header_itemilist{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-header_item{
+    margin: 0;
+    padding: 10px;
+}
+.main-header_item a{
+    text-decoration: none;
+    color: antiquewhite;
+}
