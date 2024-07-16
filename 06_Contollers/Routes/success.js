@@ -3,11 +3,8 @@ const path = require('path');
 const rootDir = require('../utility/paths');
 
 const routes = express.Router();
+const contactPage = require('../controllers/contactUs');
 
-// routes.get('/success',(req,res,next)=>{
-//     res.sendFile(path.join(rootDir, 'Views', 'success.html'));
-// })
-routes.post('/success', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'Views', 'success.html'));
-});
+routes.post('/success', contactPage.postContact);
+
 module.exports = routes;
